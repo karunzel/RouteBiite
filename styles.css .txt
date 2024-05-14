@@ -1,9 +1,11 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;  /* Ändere die Schriftart auf 'Lato' */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #000;  /* Hintergrundfarbe des gesamten Körpers */
+    color: #fff;  /* Standard Textfarbe */
 }
 
 header {
@@ -34,16 +36,18 @@ section {
 }
 
 section#home {
-    background-color: #f4f4f4;
+    background-color: #000;  /* Hintergrundfarbe der Startseite */
+    color: #B0FF00;  /* Textfarbe der Startseite */
 }
 
 .btn {
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #B0FF00;  /* Knopffarbe */
+    color: #000;  /* Textfarbe des Knopfs */
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;  /* Fettgedruckter Text */
 }
 
 footer {
@@ -54,4 +58,38 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.phone img {
+    max-width: 200px;
+    border: 2px solid #B0FF00;  /* Umrandung der Bilder */
+    border-radius: 10px;  /* Abgerundete Ecken */
+}
+
+.phone button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #B0FF00;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.phone button:hover {
+    background-color: #A0E000;
 }
